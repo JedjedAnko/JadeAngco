@@ -198,6 +198,56 @@
   border: 4px solid #fff;
   box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
   transition: transform 0.4s ease, box-shadow 0.4s ease;
+  position: absolute;   /* desktop default */
+  top: -6rem;           /* match -top-24 */
 }
+/* Tablet & Mobile (≤900px) */
+@media (max-width: 1024px) {
+  .profile-pic {
+    width: 240px;
+    height: 240px;
+    position: static;  /* remove absolute to prevent overlap */
+    margin-top: 20px;  /* spacing */
+  }
+
+  .flex.justify-center.relative.mt-28 {
+    margin-top: 0; /* no huge spacing */
+    display: flex;
+    justify-content: center;
+  }
+
+  .u-page-hero {
+    margin-top: 20px;
+    text-align: center;
+  }
+}
+@media (max-width: 840px) {
+  .profile-pic {
+    width: 220px;
+    height: 220px;
+    position: static;  /* remove absolute to prevent overlap */
+    margin-top: 20px;  /* spacing */
+  }
+
+  .flex.justify-center.relative.mt-28 {
+    margin-top: 0; /* no huge spacing */
+    display: flex;
+    justify-content: center;
+  }
+
+  .u-page-hero {
+    margin-top: 20px;
+    text-align: center;
+  }
+}
+/* Mobile phones (≤640px) */
+@media (max-width: 640px) {
+  .profile-pic {
+    width: 180px;
+    height: 180px;
+  }
+
+}
+
 </style>
 
