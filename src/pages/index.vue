@@ -6,20 +6,20 @@
       description="Programmer Analyst with a BS in Computer Science from North Eastern Mindanao State University. Skilled in PHP development, UI/UX design, and IT support, with hands-on experience in both software and hardware troubleshooting. Certified in Computer System Servicing NCII."
     >
       <template #links>
-        <!-- Default NuxtLink button -->
+        <!-- Default NuxtLink button
         <UButton
           label="View My Work"
           to="#experience"
           trailing-icon="i-lucide-arrow-right"
           size="xl"
-        />
+        /> -->
 
         <!-- Force refresh to open PDF -->
         <a
           href="/cv/Jade-Angco-CV.pdf"
           target="_blank"
           rel="noopener noreferrer"
-          class="u-button u-button-subtle u-button-xl flex items-center gap-2"
+          class="resume-btn flex items-center gap-2"
         >
           <i class="i-lucide-file-text"></i>
           Download Resume
@@ -153,3 +153,31 @@
     </UPageSection>
   </div>
 </template>
+
+<style scoped>
+.resume-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 24px;
+  background-color: #2563eb; /* blue */
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+.resume-btn:hover {
+  background-color: #1d4ed8; /* darker blue */
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+}
+
+.resume-btn:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+</style>
