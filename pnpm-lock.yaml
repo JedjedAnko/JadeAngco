@@ -17,6 +17,9 @@ importers:
       '@nuxt/ui':
         specifier: ^4.0.0
         version: 4.0.0(@babel/parser@7.28.4)(db0@0.3.4)(embla-carousel@8.6.0)(typescript@5.9.2)(vite@7.1.7(jiti@2.6.0)(lightningcss@1.30.1)(yaml@2.8.1))(vue-router@4.5.1(vue@3.5.22(typescript@5.9.2)))(vue@3.5.22(typescript@5.9.2))(zod@4.1.11)
+      pnpm:
+        specifier: ^10.18.0
+        version: 10.18.0
       vue:
         specifier: ^3.5.22
         version: 3.5.22(typescript@5.9.2)
@@ -2258,6 +2261,11 @@ packages:
 
   pkg-types@2.3.0:
     resolution: {integrity: sha512-SIqCzDRg0s9npO5XQ3tNZioRY1uK06lA41ynBC1YmFTmnY6FjUjVt6s4LoADmwoig1qqD0oK8h1p/8mlMx8Oig==}
+
+  pnpm@10.18.0:
+    resolution: {integrity: sha512-6AT4ifHOzEDVctsITuw+SIFzn43sacD/ENLRvv+aTjCTg7ontbdQBZ1/TBSVNbbNDSyx7Trrc5I5pChKaPQM+g==}
+    engines: {node: '>=18.12'}
+    hasBin: true
 
   postcss-selector-parser@6.1.2:
     resolution: {integrity: sha512-Q8qQfPiZ+THO/3ZrOrO0cJJKfpYCagtMUkXbnEfmgUjwXg6z/WBeOyS9APBBPCTSiDV+s4SwQGu8yFsiMRIudg==}
@@ -5548,6 +5556,8 @@ snapshots:
       confbox: 0.2.2
       exsolve: 1.0.7
       pathe: 2.0.3
+
+  pnpm@10.18.0: {}
 
   postcss-selector-parser@6.1.2:
     dependencies:

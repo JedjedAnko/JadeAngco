@@ -1,31 +1,34 @@
 <template>
   <div>
     <!-- HERO / INTRO -->
+    <div class="flex justify-center relative mt-26">
+      <img
+        src="/img/jade.jpeg"
+        alt="Jade Angco"
+        class="profile-pic absolute -top-24"
+      >
+    </div>
     <UPageHero
       title="Hey, I'm Jade Angco"
       description="Programmer Analyst with a BS in Computer Science from North Eastern Mindanao State University. Skilled in PHP development, UI/UX design, and IT support, with hands-on experience in both software and hardware troubleshooting. Certified in Computer System Servicing NCII."
     >
+      <!-- Links Section -->
       <template #links>
-        <!-- Default NuxtLink button
-        <UButton
-          label="View My Work"
-          to="#experience"
-          trailing-icon="i-lucide-arrow-right"
-          size="xl"
-        /> -->
-
-        <!-- Force refresh to open PDF -->
         <a
           href="/cv/Jade-Angco-CV.pdf"
           target="_blank"
           rel="noopener noreferrer"
           class="resume-btn flex items-center gap-2"
         >
-          <i class="i-lucide-file-text"></i>
+          <i
+            class="iconify"
+            data-icon="material-symbols:description"
+          />
           Download Resume
         </a>
       </template>
     </UPageHero>
+
 
     <!-- ABOUT SECTION -->
     <UPageSection
@@ -41,32 +44,32 @@
       description="Here’s a look at my professional background and contributions."
       :features="[
         {
-          icon: 'i-lucide-code-2',
+          icon: 'material-symbols:code',
           title: 'Programmer Analyst – Simple Softech Solutions Co.',
           description:
             'July 2025 – Present. Working on software development, IT support, and technical solutions for enterprise operations.',
         },
         {
-          icon: 'i-lucide-code-2',
+          icon: 'material-symbols:code',
           title: 'On-the-Job Training – Simple Softech Solutions Co.',
           description:
             'June 2024 – July 2024. Developed a hospital queue management system as part of my training program.',
         },
         {
-          icon: 'i-lucide-monitor',
+          icon: 'material-symbols:computer',
           title: 'Computer Attendant – Star Bytes Café (Family Business)',
           description:
             '2013 – 2018. Managed day-to-day operations of the computer café, assisting customers with technical support and maintaining computer systems.',
         },
         {
-          icon: 'i-lucide-settings',
+          icon: 'material-symbols:build',
           title: 'Freelancer Computer Technician',
           description:
             '2019 - 2024. I provide computer repair and maintenance services to clients, including hardware troubleshooting, software installation, and system optimization.',
         },
       ]"
     />
-    <!-- PROJECTS SECTION -->
+
     <!-- PROJECTS SECTION -->
     <UPageSection
       id="projects"
@@ -74,25 +77,25 @@
       description="Some of the projects I’ve worked on, showcasing my skills and problem-solving abilities."
       :features="[
         {
-          icon: 'i-lucide-layers',
+          icon: 'material-symbols:layers',
           title: 'Hospital Queue Management System',
           description:
             'A completed web-based system developed during my OJT at Simple Softech Solutions. It efficiently manages patient queues but is used only locally.',
         },
         {
-          icon: 'i-lucide-globe',
+          icon: 'material-symbols:public',
           title: 'EduShare App',
           description:
             'A mobile app for students to share and favorite academic files, with SQLite integration and scheduling features. Fully developed but only used locally.',
         },
         {
-          icon: 'i-lucide-utensils',
+          icon: 'material-symbols:restaurant',
           title: 'NutriGourmet – Food Blog',
           description:
             'A recipe-sharing website where users can publish and share cooking creations. Completed but locally used only.',
         },
         {
-          icon: 'i-lucide-bar-chart',
+          icon: 'material-symbols:bar-chart',
           title: 'Employee Turnover Prediction (Thesis)',
           description:
             'My undergraduate thesis project using Gradient Boosting to predict employee attrition based on structured datasets and organizational features.',
@@ -107,38 +110,24 @@
       description="Some of the tools and technologies I work with."
       :features="[
         {
-          icon: 'i-simple-icons-php',
+          icon: 'material-symbols:php',
           title: 'PHP Development',
           description: 'Building reliable and scalable web applications.',
         },
         {
-          icon: 'i-lucide-monitor',
+          icon: 'material-symbols:computer',
           title: 'UI/UX Design',
           description:
             'Designing user-friendly, responsive interfaces with a focus on accessibility.',
         },
         {
-          icon: 'i-lucide-cpu',
+          icon: 'material-symbols:memory',
           title: 'Hardware & IT Support',
           description:
             'Troubleshooting, maintenance, and Computer System Servicing NCII certified.',
         },
       ]"
     />
-    <!-- SIDE HUSTLES SECTION -->
-    <!-- <UPageSection
-      id="skills"
-      title="Side Hustles"
-      description="Some of the side hustles I do."
-      :features="[
-        {
-          icon: 'i-lucide-settings',
-          title: 'Freelancer Computer Technician',
-          description:
-            'I provide computer repair and maintenance services to clients, including hardware troubleshooting, software installation, and system optimization.',
-        },
-      ]"
-    /> -->
 
     <UPageSection>
       <UPageCTA
@@ -149,14 +138,14 @@
           {
             label: 'Contact Me',
             to: 'mailto:jedboyjabagat@gmail.com',
-            trailingIcon: 'i-lucide-mail',
+            trailingIcon: 'material-symbols:mail',
             color: 'neutral',
           },
           {
             label: 'Facebook',
             to: 'https://www.facebook.com/Adi.Adept/',
             target: '_blank',
-            icon: 'i-simple-icons-facebook',
+            icon: 'akar-icons:facebook-fill',
             color: 'neutral',
             variant: 'outline',
           },
@@ -164,7 +153,7 @@
             label: 'Instagram',
             to: 'https://www.instagram.com/adi.adept/',
             target: '_blank',
-            icon: 'i-simple-icons-instagram',
+            icon: 'akar-icons:instagram-fill',
             color: 'neutral',
             variant: 'outline',
           },
@@ -200,4 +189,18 @@
   transform: translateY(0);
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
 }
+.profile-pic {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #fff;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+.profile-pic:hover {
+  transform: scale(1.1);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.4);
+}
 </style>
+
