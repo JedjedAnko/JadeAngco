@@ -58,6 +58,12 @@
           description:
             '2013 – 2018. Managed day-to-day operations of the computer café, assisting customers with technical support and maintaining computer systems.',
         },
+        {
+          icon: 'i-lucide-settings',
+          title: 'Freelancer Computer Technician',
+          description:
+            '2019 - 2024. I provide computer repair and maintenance services to clients, including hardware troubleshooting, software installation, and system optimization.',
+        },
       ]"
     />
     <!-- PROJECTS SECTION -->
@@ -119,6 +125,20 @@
         },
       ]"
     />
+    <!-- SIDE HUSTLES SECTION -->
+    <!-- <UPageSection
+      id="skills"
+      title="Side Hustles"
+      description="Some of the side hustles I do."
+      :features="[
+        {
+          icon: 'i-lucide-settings',
+          title: 'Freelancer Computer Technician',
+          description:
+            'I provide computer repair and maintenance services to clients, including hardware troubleshooting, software installation, and system optimization.',
+        },
+      ]"
+    /> -->
 
     <UPageSection>
       <UPageCTA
