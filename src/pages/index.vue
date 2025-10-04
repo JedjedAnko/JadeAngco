@@ -248,6 +248,16 @@
   }
 
 }
+/* iPhone 11 and similar (≤414px) */
+@media (max-width: 414px) {
+  .profile-pic {
+    width: 170px;
+    height: 170px;
+    position: static;   /* ensure no overlap */
+    display: block;
+  }
 
+
+}
 </style>
 
