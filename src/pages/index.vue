@@ -1,7 +1,7 @@
 <template>
   <div>
     <!-- HERO / INTRO -->
-    <div class="flex justify-center relative mt-26">
+    <div class="flex justify-center relative mt-28">
       <img
         src="/img/jade.jpeg"
         alt="Jade Angco"
@@ -35,6 +35,7 @@
       id="about"
       title="About Me"
       description="I bring a strong mix of programming and IT support expertise, bridging the gap between design, functionality, and technical problem-solving. With hands-on experience in PHP, UI/UX design, and hardware troubleshooting, I focus on delivering reliable digital solutions that support organizational growth and innovation."
+      class="!py-0 !my-0"
     />
 
     <!-- EXPERIENCE SECTION -->
@@ -169,7 +170,7 @@
   align-items: center;
   gap: 8px;
   padding: 12px 24px;
-  background-color: #2563eb; /* blue */
+  background-color: #42b883; 
   color: #fff;
   font-size: 16px;
   font-weight: 600;
@@ -197,10 +198,6 @@
   border: 4px solid #fff;
   box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
   transition: transform 0.4s ease, box-shadow 0.4s ease;
-}
-.profile-pic:hover {
-  transform: scale(1.1);
-  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.4);
 }
 </style>
 
