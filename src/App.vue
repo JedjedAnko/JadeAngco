@@ -4,7 +4,7 @@
       <header
         class="flex items-center justify-between p-4 sticky top-0 bg-background/90 backdrop-blur z-10"
       >
-        <RouterLink to="/" class="font-bold text-xs sm:text-xl">
+        <RouterLink to="/" class="text-xs sm:text-xl">
           Jade Angco - UI/UX Designer & Frontend Developer
         </RouterLink>
 
