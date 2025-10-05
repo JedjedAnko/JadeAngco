@@ -1,26 +1,30 @@
 <template>
   <Suspense>
     <UApp>
-      <UHeader>
-        <template #left>
-          <RouterLink to="/">
-            <h1>Jade Angco - UI/UX Designer & Frontend Developer</h1>
-          </RouterLink>
-        </template>
+      <header
+        class="flex items-center justify-between p-4 sticky top-0 bg-background/90 backdrop-blur z-10"
+      >
+        <RouterLink to="/" class="font-bold text-xs sm:text-xl">
+          Jade Angco - UI/UX Designer & Frontend Developer
+        </RouterLink>
 
-        <template #right>
-          <UColorModeButton />
-
-          <!-- <UButton
-            to="https://github.com/JedjedAnko"
+        <div class="flex items-center gap-2">
+          <UButton
+            to="https://www.instagram.com/adi.adept/"
             target="_blank"
-            icon="simple-icons:github"
-            aria-label="GitHub"
-            color="neutral"
+            icon="mdi:instagram"
             variant="ghost"
-          /> -->
-        </template>
-      </UHeader>
+          />
+          <UButton
+            to="https://www.facebook.com/Adi.Adept/"
+            target="_blank"
+            icon="mdi:facebook"
+            variant="ghost"
+          />
+          <UButton to="mailto:jedboyjabagat@gmail.com" icon="mdi:email" variant="ghost" />
+          <UColorModeButton />
+        </div>
+      </header>
 
       <UMain>
         <RouterView />
