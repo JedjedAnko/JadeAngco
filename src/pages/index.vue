@@ -76,33 +76,38 @@
       id="projects"
       title="Projects"
       description="Some of the projects I’ve worked on, showcasing my skills and problem-solving abilities."
-      :features="[
-        {
-          icon: 'material-symbols:layers',
-          title: 'Hospital Queue Management System',
-          description:
-            'A completed web-based system developed during my OJT at Simple Softech Solutions. It efficiently manages patient queues but is used only locally.',
-        },
-        {
-          icon: 'material-symbols:public',
-          title: 'EduShare App',
-          description:
-            'A mobile app for students to share and favorite academic files, with SQLite integration and scheduling features. Fully developed but only used locally.',
-        },
-        {
-          icon: 'material-symbols:restaurant',
-          title: 'NutriGourmet – Food Blog',
-          description:
-            'A recipe-sharing website where users can publish and share cooking creations. Completed but locally used only.',
-        },
-        {
-          icon: 'material-symbols:bar-chart',
-          title: 'Employee Turnover Prediction (Thesis)',
-          description:
-            'My undergraduate thesis project using Gradient Boosting to predict employee attrition based on structured datasets and organizational features.',
-        },
-      ]"
-    />
+    >
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-8">
+        <div
+          v-for="(project, index) in projects"
+          :key="index"
+          class="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300"
+        >
+          <!-- Image -->
+          <img
+            :src="project.image"
+            :alt="project.title"
+            class="w-full h-48 object-cover"
+          >
+
+          <!-- Content -->
+          <div class="p-6">
+            <div class="flex items-center space-x-2 mb-3">
+              <Icon
+                :name="project.icon"
+                class="text-rose-500 text-2xl"
+              />
+              <h3 class="text-lg font-semibold">
+                {{ project.title }}
+              </h3>
+            </div>
+            <p class="text-gray-600 text-sm leading-relaxed">
+              {{ project.description }}
+            </p>
+          </div>
+        </div>
+      </div>
+    </UPageSection>
 
     <!-- SKILLS SECTION -->
     <UPageSection
@@ -163,6 +168,49 @@
     </UPageSection>
   </div>
 </template>
+<script setup>
+const projects = [
+  {
+    title: 'Hospital Queue Management System',
+    description:
+      'A completed web-based system developed during my OJT at Simple Softech Solutions. It efficiently manages patient queues but is used only locally.',
+    image: '/img/projects/Hospital.jpeg',
+  },
+  {
+   
+    title: 'Elnido Hideaway',
+    description:
+      'A website showcasing the stunning tourist spots of El Nido, featuring local attractions and destination highlights. Fully developed but intended for local use.',
+    image: '/img/projects/Elnido1.jpeg',
+  },
+  {
+    
+    title: 'NutriGourmet – Food Blog',
+    description:
+      'A recipe-sharing website where users can publish and share cooking creations. Completed but locally used only.',
+    image: '/img/projects/Nutrigourment3.jpeg',
+  },
+  {
+  title: 'EventEase – Info Website',
+  description:
+    'An informational website for EventEase that presents upcoming events, schedules, and venue details. Completed but locally used only.',
+  image: '/img/projects/EventEase1.jpeg',
+  },
+  {
+    
+    title: 'Employee Turnover Attrition (Thesis)',
+    description:
+      'My undergraduate thesis project using Gradient Boosting to predict employee attrition based on structured datasets and organizational features.',
+    image: '/img/projects/PEA.jpeg',
+  },
+  {
+   title: 'Student Mental Health',
+    description:
+      'A mental health monitoring web app for students built with Flet and MySQL. It predicts stress and risk levels using a Random Forest algorithm, features session-based login, editable user profiles, and admin analytics dashboards. Fully developed and tested locally.',
+    image: '/img/projects/MentalHealth.jpeg',
+  },
+]
+</script>
 
 <style scoped>
 .resume-btn {
