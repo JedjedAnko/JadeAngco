@@ -87,7 +87,7 @@
           <img
             :src="project.image"
             :alt="project.title"
-            class="w-full h-48 object-cover"
+            class="w-full h-48 sm:h-56 md:h-64 lg:h-72 object-cover object-center"
           >
 
           <!-- Content -->
