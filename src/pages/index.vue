@@ -40,7 +40,7 @@
           icon: 'material-symbols:code',
           title: 'Programmer Analyst – Simple Softech Solutions Co.',
           description:
-            'July 2025 – Present. Working on software development, IT support, and technical solutions for enterprise operations.',
+            'July 2025 – October 2025. Working on software development, IT support, and technical solutions for enterprise operations.',
         },
         {
           icon: 'material-symbols:code',
