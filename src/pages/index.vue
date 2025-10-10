@@ -2,11 +2,7 @@
   <div>
     <!-- HERO / INTRO -->
     <div class="flex justify-center relative mt-28">
-      <img
-        src="/img/jade.jpeg"
-        alt="Jade Angco"
-        class="profile-pic absolute -top-24"
-      >
+      <img src="/img/jade.jpeg" alt="Jade Angco" class="profile-pic absolute -top-24" />
     </div>
     <UPageHero
       title="Hey, I'm Jade Angco"
@@ -20,15 +16,11 @@
           rel="noopener noreferrer"
           class="resume-btn flex items-center gap-2"
         >
-          <i
-            class="iconify"
-            data-icon="material-symbols:description"
-          />
+          <i class="iconify" data-icon="material-symbols:description" />
           Download Resume
         </a>
       </template>
     </UPageHero>
-
 
     <!-- ABOUT SECTION -->
     <UPageSection
@@ -87,17 +79,13 @@
           <img
             :src="project.image"
             :alt="project.title"
-            class="w-full h-48 sm:h-56 md:h-64 lg:h-68 object-contain object-center "
-          >
-
+            class="w-full h-48 sm:h-56 md:h-64 lg:h-68 object-contain object-center"
+          />
 
           <!-- Content -->
           <div class="p-6">
             <div class="flex items-center space-x-2 mb-3">
-              <Icon
-                :name="project.icon"
-                class="text-rose-500 text-2xl"
-              />
+              <Icon :name="project.icon" class="text-rose-500 text-2xl" />
               <h3 class="text-lg font-semibold">
                 {{ project.title }}
               </h3>
@@ -171,46 +159,44 @@
 </template>
 <script setup>
 const projects = [
+  // NutriGourmet – Food Blog project:
+  // {
+  //     title: "NutriGourmet – Food Blog",
+  //     description:
+  //       "A recipe-sharing website where users can publish and share cooking creations. Completed but locally used only.",
+  //     image: "/img/projects/Nutrigourment3.jpeg",
+  // },
   {
-    title: 'Hospital Queue Management System',
+    title: "Elnido Hideaway",
     description:
-      'A completed web-based system developed during my OJT at Simple Softech Solutions. It efficiently manages patient queues but is used only locally.',
-    image: '/img/projects/Hospital.jpeg',
+      "A website showcasing the stunning tourist spots of El Nido, featuring local attractions and destination highlights. Fully developed but intended for local use.",
+    image: "/img/projects/Elnido1.jpeg",
   },
   {
-   
-    title: 'Elnido Hideaway',
+    title: "NutriGourmet – Food Blog",
     description:
-      'A website showcasing the stunning tourist spots of El Nido, featuring local attractions and destination highlights. Fully developed but intended for local use.',
-    image: '/img/projects/Elnido1.jpeg',
+      "A recipe-sharing website where users can publish and share cooking creations. Completed but locally used only.",
+    image: "/img/projects/Nutrigourment3.jpeg",
   },
   {
-    
-    title: 'NutriGourmet – Food Blog',
+    title: "EventEase – Info Website",
     description:
-      'A recipe-sharing website where users can publish and share cooking creations. Completed but locally used only.',
-    image: '/img/projects/Nutrigourment3.jpeg',
+      "An informational website for EventEase that presents upcoming events, schedules, and venue details. Completed but locally used only.",
+    image: "/img/projects/EventEase1.jpeg",
   },
   {
-  title: 'EventEase – Info Website',
-  description:
-    'An informational website for EventEase that presents upcoming events, schedules, and venue details. Completed but locally used only.',
-  image: '/img/projects/EventEase1.jpeg',
-  },
-  {
-    
-    title: 'Employee Turnover Attrition (Thesis)',
+    title: "Employee Turnover Attrition (Thesis)",
     description:
-      'My undergraduate thesis project using Gradient Boosting to predict employee attrition based on structured datasets and organizational features.',
-    image: '/img/projects/PEA.jpeg',
+      "My undergraduate thesis project using Gradient Boosting to predict employee attrition based on structured datasets and organizational features.",
+    image: "/img/projects/PEA.jpeg",
   },
   {
-   title: 'Student Mental Health',
+    title: "Student Mental Health",
     description:
-      'A mental health monitoring web app for students built with Flet and MySQL. It predicts stress and risk levels using a Random Forest algorithm, features session-based login, editable user profiles, and admin analytics dashboards. Fully developed and tested locally.',
-    image: '/img/projects/MentalHealth.jpeg',
+      "A mental health monitoring web app for students built with Flet and MySQL. It predicts stress and risk levels using a Random Forest algorithm, features session-based login, editable user profiles, and admin analytics dashboards. Fully developed and tested locally.",
+    image: "/img/projects/MentalHealth.jpeg",
   },
-]
+];
 </script>
 
 <style scoped>
@@ -219,7 +205,7 @@ const projects = [
   align-items: center;
   gap: 8px;
   padding: 12px 24px;
-  background-color: #42b883; 
+  background-color: #42b883;
   color: #fff;
   font-size: 16px;
   font-weight: 600;
@@ -247,16 +233,16 @@ const projects = [
   border: 4px solid #fff;
   box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
   transition: transform 0.4s ease, box-shadow 0.4s ease;
-  position: absolute;   /* desktop default */
-  top: -6rem;           /* match -top-24 */
+  position: absolute; /* desktop default */
+  top: -6rem; /* match -top-24 */
 }
 /* Tablet & Mobile (≤900px) */
 @media (max-width: 1024px) {
   .profile-pic {
     width: 240px;
     height: 240px;
-    position: static;  /* remove absolute to prevent overlap */
-    margin-top: 20px;  /* spacing */
+    position: static; /* remove absolute to prevent overlap */
+    margin-top: 20px; /* spacing */
   }
 
   .flex.justify-center.relative.mt-28 {
@@ -274,8 +260,8 @@ const projects = [
   .profile-pic {
     width: 220px;
     height: 220px;
-    position: static;  /* remove absolute to prevent overlap */
-    margin-top: 20px;  /* spacing */
+    position: static; /* remove absolute to prevent overlap */
+    margin-top: 20px; /* spacing */
   }
 
   .flex.justify-center.relative.mt-28 {
@@ -295,18 +281,14 @@ const projects = [
     width: 180px;
     height: 180px;
   }
-
 }
 /* iPhone 11 and similar (≤414px) */
 @media (max-width: 414px) {
   .profile-pic {
     width: 170px;
     height: 170px;
-    position: static;   /* ensure no overlap */
+    position: static; /* ensure no overlap */
     display: block;
   }
-
-
 }
 </style>
-
